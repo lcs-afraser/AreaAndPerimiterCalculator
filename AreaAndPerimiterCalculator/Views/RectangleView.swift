@@ -39,7 +39,7 @@ struct RectangleView: View {
             Text("\(length)")
             
             //Slider to control length
-            Slider(value: Binding.constant(length),
+            Slider(value: $length,
                    in: 0...100,
                    label: { Text("Length")},
                    minimumValueLabel: { Text("0")},
@@ -53,7 +53,7 @@ struct RectangleView: View {
             Text("\(width)")
             
             //Slider to control width
-            Slider(value: Binding.constant(width),
+            Slider(value: $width,
                    in: 0...100,
                    label: { Text("width")},
                    minimumValueLabel: { Text("0")},
